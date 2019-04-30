@@ -12,6 +12,6 @@ void main (void) {
 	pinMode(LinePin0, INPUT);
 	
 	while(1) {
-		printf("LinePin %i/n", digitalRead(LinePin0));
+		printf("LinePin %i\n", digitalRead(LinePin0));
 	}
 }
