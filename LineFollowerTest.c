@@ -1,6 +1,6 @@
 //Linefollower HW Test
 
-#include <wiringPi>
+#include <wiringPi.h>
 #include <stdio.h>
 
 #define LinePin0 0
