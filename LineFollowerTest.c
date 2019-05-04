@@ -18,12 +18,12 @@ void main (void) {
 	
 	while(1) {
 		detectLine0 = -1;
-		if (digitalRead(LinePin0)==LOW) then detectLine0 = 0;
-		if (digitalRead(LinePin0)==HIGH) then detectLine0 = 1;
+		if (digitalRead(LinePin0)==LOW) detectLine0 = 0;
+		if (digitalRead(LinePin0)==HIGH) detectLine0 = 1;
 		printf("LinePin0 %i\n", detectLine0);
 		detectLine1 = -1;
-		if (digitalRead(LinePin1)==LOW) then detectLine1 = 0;
-		if (digitalRead(LinePin1)==HIGH) then detectLine1 = 1;
+		if (digitalRead(LinePin1)==LOW) detectLine1 = 0;
+		if (digitalRead(LinePin1)==HIGH) detectLine1 = 1;
 		printf("LinePin1 %i\n", detectLine1);
 	}
 }
