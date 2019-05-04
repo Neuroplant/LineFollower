@@ -20,7 +20,7 @@ void main (void) {
 		detectLine0 = -1;
 		if (digitalRead(LinePin0)==LOW) detectLine0 = 0;
 		if (digitalRead(LinePin0)==HIGH) detectLine0 = 1;
-		printf("LinePin0 %i\n", detectLine0);
+		printf("LinePin0 %i ", detectLine0);
 		detectLine1 = -1;
 		if (digitalRead(LinePin1)==LOW) detectLine1 = 0;
 		if (digitalRead(LinePin1)==HIGH) detectLine1 = 1;
