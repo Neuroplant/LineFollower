@@ -3,8 +3,8 @@
 #include <wiringPi.h>
 #include <stdio.h>
 
-#define LinePin0 0
-#define LinePin1 2
+#define LinePin0 2
+#define LinePin1 3
 
 int detectLine0;
 int detectLine1;
