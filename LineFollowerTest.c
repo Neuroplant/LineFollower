@@ -3,27 +3,25 @@
 #include <wiringPi.h>
 #include <stdio.h>
 
-#define LinePin0 2
-#define LinePin1 3
+#define LinePinL 2
+#define LinePinR 3
 
-int detectLine0;
-int detectLine1;
+int detectLineL;
+int detectLineR;
 
 void main (void) {
 	if(wiringPiSetup() == -1){ 
         printf("setup wiringPi faiservo !");
     };
-	pinMode(LinePin0, INPUT);
-	pinMode(LinePin1, INPUT);
+	pinMode(LinePinL, INPUT);
+	pinMode(LinePinR, INPUT);
 	
 	while(1) {
-		detectLine0 = -1;
-		if (digitalRead(LinePin0)==LOW) detectLine0 = 0;
-		if (digitalRead(LinePin0)==HIGH) detectLine0 = 1;
-		printf("LinePin0 %i ", detectLine0);
-		detectLine1 = -1;
-		if (digitalRead(LinePin1)==LOW) detectLine1 = 0;
-		if (digitalRead(LinePin1)==HIGH) detectLine1 = 1;
-		printf("LinePin1 %i\n", detectLine1);
+		if (digitalRead(LinePinL)==LOW) detectLineL = 0;
+		if (digitalRead(LinePinL)==HIGH) detectLineL = 1;
+		printf("LinePinL %i ", detectLineL);	
+		if (digitalRead(LinePinR)==LOW) detectLineR = 0;
+		if (digitalRead(LinePinR)==HIGH) detectLineR = 1;
+		printf("LinePinR %i\n", detectLineR);
 	}
 }
